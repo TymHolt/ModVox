@@ -67,6 +67,6 @@ public enum Key {
             if(key.glfwHandle == glfwHandle)
                 return key;
 
-        throw new RuntimeException("No Key object for glfwHandle '" + glfwHandle + "'");
+        return null;
     }
 }
